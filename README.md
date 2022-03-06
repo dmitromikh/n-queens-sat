@@ -1,4 +1,4 @@
-# n-queens-sat-generator
+# N Queens SAT solution
 
 This project generates solution for N Queens Problem using translation to SAT and MiniSAT-solver.
 
