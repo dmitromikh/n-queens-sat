@@ -1,11 +1,11 @@
 name: Python application
 
 on:
-  push:
-    branches: [ add-ci ]
-  pull_request:
-    branches: [ add-ci ]
-
+ push:
+   tags:
+     - '!refs/tags/*'
+   branches:
+     - '*'
 jobs:
   build:
 

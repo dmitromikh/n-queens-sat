@@ -40,6 +40,7 @@ class TestSat:
                 for j in range(0, count):
                     num_queens += \
                         int(solution[board[min(size, line) - j - 1][start_col + j]])
+                assert num_queens <= 1
     
     def test_main_diag(self):
         for i in range(4, 20):
@@ -52,3 +53,4 @@ class TestSat:
                 for j in range(0, count):
                     num_queens += \
                         int(solution[board[min(size, line) - j - 1][size - start_col - j - 1]])
+                assert num_queens <= 1
